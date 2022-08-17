@@ -23,13 +23,40 @@
 }
 
 .modal-form__input {
+    color: #757575;
     border: 1px solid rgba(33, 33, 33, 0.2);
+    letter-spacing: 0.03em;
     border-radius: 4px;
     height: 40px;
     margin-top: 4px;
     padding-left: 40px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--icon {
+            position: absolute;
+            color: #212121;
+            height: 12px;
+            width: 15px;
+            left: 15px;
+            bottom: 24px;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+    &:hover+svg,
+    &:focus-within+svg {
+            fill: $brandColor;
+        }
+    
+    &:hover {
+            border-color: $brandColor;
+        }
+
+    &:focus-within {
+        outline: 1px solid $brandColor;
+    }
 }
+
+
 
 .modal-form__textarea {
     display: flex;
@@ -45,102 +72,85 @@
     height: 120px;
     width: 100%;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-form__input:hover,
-.modal-form__textarea:hover {
-    border-color: $brandColor;
-}
+    &::placeholder {
+            color: rgba(117, 117, 117, 0.5);
+        }
+    
+    &:hover {
+        border-color: $brandColor;
+    }
 
-.modal-form__input:hover+svg,
-.modal-form__input:focus-within+svg {
-    fill: $brandColor;
-}
-
-.modal-form__input:focus-within,
-.modal-form__textarea:focus-within,
-.email-newsletter:focus-within {
-    outline: 1px solid $brandColor;
-}
-
-
-.modal-form__textarea::placeholder {
-    color: rgba(117, 117, 117, 0.5);
+    &:focus-within {
+        outline: 1px solid $brandColor;
+    }
 }
 
 
 .modal-form__consent {
     padding-left: 15px;
+
+    &--text {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 10px;
+
+        &::before {
+            display: inline-block;
+            content: "";
+            width: 16px;
+            height: 16px;
+            border: 2px solid #212121;
+            border-radius: 4px;
+            margin-right: 9px;
+        }
+    }
+
+    &--link {
+        color: $brandColor;
+        text-decoration: underline;
+    }
+
+    &--checkbox:checked+.modal-form__consent--text::before {
+        border: none;
+        background-image: url(../images/check-icon.svg);
+    }
 }
 
-.modal-form__input--icon {
-    position: absolute;
-    color: #212121;
-    height: 12px;
-    width: 15px;
-    left: 15px;
-    bottom: 24px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.modal-form__consent--text {
-    display: inline-block;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-}
-
-.modal-form__input {letter-spacing: 0.03em;
-    color: #757575;
-    margin-top: 10px;
-}
-
-.modal-form__consent--link {
-    color: $brandColor;
-    text-decoration: underline;
-}
-
-.modal-form__consent--text::before {
-    display: inline-block;
-    content: "";
-    width: 16px;
-    height: 16px;
-    border: 2px solid #212121;
-    border-radius: 4px;
-    margin-right: 9px;
-}
-
-.modal-form__consent--checkbox:checked+.modal-form__consent--text::before {
-    border: none;
-    background-image: url(../images/check-icon.svg);
-}
 
 .modal-form__submit {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+
+    &--button {
+        padding: 10px 76px;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        background: $brandColor;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.06em;
+        flex-direction: row;
+        margin-top: 30px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            background-color: #1976d2;
+        }
+    }
 }
 
-.modal-form__submit--button {
-    padding: 10px 76px;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    background: $brandColor;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.06em;
-    flex-direction: row;
-    margin-top: 30px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 
-.modal-form__submit--button:hover,
-.modal-form__submit--button:focus {
-    background-color: #1976d2;
-}
+
+ 
+
+

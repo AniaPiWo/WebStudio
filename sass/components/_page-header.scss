@@ -32,17 +32,27 @@ main {
     &-item {
             color: $navLinks;
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+        &:hover {
+                color: $brandColor;
+                fill: $brandColor;
+            }
 
-            &--link {
-                    font-size: 14px;
-                    font-weight: 500;
-                    line-height: 1.8;
-                    text-decoration: none;
-                    color: $navLinks;
-                    display: flex;
-                    align-items: center;
-                    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &--link {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.8;
+            text-decoration: none;
+            color: $navLinks;
+            display: flex;
+            align-items: center;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover {
+                    color: $brandColor;
+                    fill: $brandColor;
                 }
+            }
         }
 
         &--active-agencja::after {
@@ -53,6 +63,7 @@ main {
             height: 4px;
             border-radius: 2px;
             margin-top: 78px;
+
         }
     
         &--active-portfolio::after {
@@ -88,6 +99,20 @@ main {
             -ms-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+            &:hover {
+                    color: $brandColor;
+                    fill: $brandColor;
+                }
+
+            &:hover .menu__contact-item--icon {
+                fill: $brandColor;
+                transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                -moz-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                -ms-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                -o-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
 }
 
     &-item--icon {
@@ -98,20 +123,14 @@ main {
         -moz-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         -ms-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         -o-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+                color: $brandColor;
+                fill: $brandColor;
+            }
 }
 }
 
 
-.menu__contact-item--icon:hover,
-.menu__nav-item--link:hover,
-.menu__contact-item--link:hover,
-.nav-contact-item:hover {
-    color: $brandColor;
-    fill: $brandColor;
-}
 
-.menu__contact-item--link:hover .menu__contact-item--icon {
-    fill: $brandColor;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
