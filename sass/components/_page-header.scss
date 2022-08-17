@@ -94,10 +94,7 @@ main {
             display: flex;
             align-items: center;
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            -moz-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            -ms-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
 
             &:hover {
                     color: $brandColor;
@@ -107,29 +104,19 @@ main {
             &:hover .menu__contact-item--icon {
                 fill: $brandColor;
                 transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                -moz-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                -ms-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                -o-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
             }
-
-}
 
     &-item--icon {
         fill: $navContact;
         margin-right: 10px;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        -moz-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        -ms-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        -o-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover {
                 color: $brandColor;
                 fill: $brandColor;
             }
-}
-}
+        }
+   }
 
 
 
