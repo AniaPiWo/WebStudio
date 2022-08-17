@@ -11,9 +11,9 @@
             justify-content: center;
             width: 270px;
             height: 120px;
-            background: #f5f4fa;
-            border-radius: 4px;
-        }
+            background: $advIconBgColor;
+            border-radius: $cardBorderRadius;
+}
 
     &--icon {
         width: 70px;
@@ -32,16 +32,16 @@
 
     &--title {
             font-size: 14px;
-            font-weight: bold;
+            font-weight: 700;
         }
 
     &--desc {
         font-weight: 400;
-        font-size: 14px;
+        font-size: 14;
         line-height: 24px;
         /* or 171% */
         letter-spacing: 0.03em;
-        color: #757575;
+        color: $secondaryColor;
         margin-top: 10px;
     }
 }
