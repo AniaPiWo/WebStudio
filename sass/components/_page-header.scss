@@ -1,0 +1,111 @@
+main {
+    border-top: 1px solid #ECECEC;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 25px 0;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.menu {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu__nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 46px;
+    flex-direction: row;
+    margin-left: 93px;
+    color: #212121;
+}
+
+.menu__nav-item {
+    color: #212121;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu__nav-item--link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.8;
+    text-decoration: none;
+    color: #212121;
+    display: flex;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu__contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-left: 345px;
+}
+
+.menu__contact-item--link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.8;
+    text-decoration: none;
+    color: #757575;
+    display: flex;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu__contact-item--icon {
+    fill: #757575;
+    margin-right: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.menu__contact-item--icon:hover,
+.menu__nav-item--link:hover,
+.menu__contact-item--link:hover,
+.nav-contact-item:hover {
+    color: $brandColor;
+    fill: $brandColor;
+}
+
+.menu__contact-item--link:hover .menu__contact-item--icon {
+    fill: $brandColor;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu__nav--active-agencja::after {
+    content: "";
+    position: absolute;
+    background: $brandColor;
+    width: 53px;
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 78px;
+}
+
+.menu__nav--active-portfolio::after {
+    content: "";
+    position: absolute;
+    background: $brandColor;
+    width: 58px;
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 78px;
+}
