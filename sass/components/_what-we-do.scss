@@ -1,13 +1,14 @@
 .what-we-do {
+
     &__title {
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 42px;
-            text-align: center;
-            letter-spacing: 0.03em;
-            color: $primaryColor;
-            margin-bottom: 50px;
-        }
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $primaryColor;
+        margin-bottom: 50px;
+    }
 
     &__figure {
         display: flex;
@@ -15,12 +16,12 @@
         gap: 30px;
 
         &--img {
-                margin: 0;
-                position: relative;
-                width: 370px;
-                height: 294px;
-                display: flex;
-            }
+            margin: 0;
+            position: relative;
+            width: 370px;
+            height: 294px;
+            display: flex;
+        }
 
         &--figaption {
             position: absolute;

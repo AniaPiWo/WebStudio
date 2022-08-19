@@ -6,19 +6,19 @@
     padding-bottom: 30px;
 
     &--bg {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 270px;
-            height: 120px;
-            background: $advIconBgColor;
-            border-radius: $cardBorderRadius;
-}
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 270px;
+        height: 120px;
+        background: $advIconBgColor;
+        border-radius: $cardBorderRadius;
+    }
 
     &--icon {
         width: 70px;
          height: 70px;
-        }
+    }
 }
 
 
@@ -31,8 +31,8 @@
     gap: 30px;
 
     &--title {
-            font-size: 14px;
-            font-weight: 700;
+        font-size: 14px;
+        font-weight: 700;
         }
 
     &--desc {

@@ -23,36 +23,41 @@
     border-radius: 4px;
 
     &__close-btn {
-            position: absolute;
-            top: 8px;
-            right: 8px;
-            width: 30px;
-            height: 30px;
-            background-color: #ffffff;
-            border: 1px solid rgba(0, 0, 0, 0.1);
-            border-radius: 50%;
-            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        background-color: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-            &:hover {
-                    cursor: pointer;
-                    border-color: $brandColor;
+        &:hover {
+            cursor: pointer;
+            border-color: $brandColor;
+
+                & .modal__close-btn--icon {
+                    fill: $brandColor;
+                    }
+                }
             
-            &:hover .modal__close-btn--icon 
-                fill: $brandColor;
-            }
+                & .modal__close-btn--icon {
+                    fill: $brandColor;
+                }
 
-            &--icon-box {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            &--icon {
-                width: 10px;
-                height: 10px;
-                fill: #000000;
-                transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            }
+    &--icon-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         }
+
+    &--icon {
+        width: 10px;
+        height: 10px;
+        fill: #000000;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
 }
 
