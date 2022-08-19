@@ -622,6 +622,7 @@ main {
 }
 .footer__address--info {
   color: white;
+  font-style: normal;
   font-size: 14px;
   vertical-align: top;
   letter-spacing: 0.25px;
@@ -629,6 +630,7 @@ main {
 }
 .footer__address--link {
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
   font-size: 14px;
   vertical-align: top;
   letter-spacing: 0.03em;
