@@ -8,14 +8,8 @@
 
 .section {
     padding: 94px 0;
-}
-
-.section-top {
-    padding: 94px 0 0 0;
-}
-
-.section-bottom {
-    padding: 0 0 94px 0;
+    &--top {padding: 94px 0 0 0;}
+    &--bottom {padding: 94px 0 0 0}
 }
 
 .center {
