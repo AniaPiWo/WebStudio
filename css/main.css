@@ -525,7 +525,6 @@ main {
   color: #212121;
 }
 .our-team__figure--position {
-  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
@@ -624,7 +623,6 @@ main {
 }
 .footer__address--info {
   color: white;
-  font-style: normal;
   font-size: 14px;
   vertical-align: top;
   letter-spacing: 0.25px;
@@ -632,7 +630,6 @@ main {
 }
 .footer__address--link {
   color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
   font-size: 14px;
   vertical-align: top;
   letter-spacing: 0.25px;
@@ -701,7 +698,6 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding-left: 16px;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.03em;
@@ -712,7 +708,6 @@ main {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .newsletter-form__email::placeholder {
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.03em;
@@ -823,7 +818,6 @@ main {
 .project-card__textbox--desc {
   padding-bottom: 20px;
   padding-left: 24px;
-  font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
@@ -847,7 +841,6 @@ main {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-card__figure--overlay p {
-  font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   /* or 156% */
