@@ -97,10 +97,10 @@ main {
         &:hover {
             color: $brandColor;
             fill: $brandColor;
-        }
-            
-        &:hover .menu__contact-item--icon {
-            fill: $brandColor;
+
+            & .menu__contact-item--icon {
+                fill: $brandColor;
+            }
         }
     }
     
