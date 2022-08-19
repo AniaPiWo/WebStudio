@@ -5,7 +5,7 @@
 .our-team__title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: $primaryColor;
@@ -39,14 +39,13 @@
         font-weight: 500;
         font-size: 16px;
         letter-spacing: 0.03em;
-        line-height: 19px;
-        letter-spacing: 0.03em;
+        line-height: 1.19;
         color: $primaryColor;
     }
 
     &--position {
         font-size: 16px;
-        line-height: 19px;
+        line-height: 1.19;
         letter-spacing: 0.03em;
         color: $secondaryColor;
     }

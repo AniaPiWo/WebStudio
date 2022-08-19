@@ -134,7 +134,7 @@
         border-radius: $btnBorderRadius;
         font-size: $btnFontSize;
         font-weight: $btnFontWeight;
-        line-height: 30px;
+        line-height: 1.88;
         letter-spacing: $btnLetterSpacing;
         flex-direction: row;
         margin-top: 30px;
@@ -142,7 +142,7 @@
 
             &:hover,
             &:focus {
-                 background-color: $btnHoverColor;
+                background-color: $btnHoverColor;
             }
     }
 }
