@@ -21,7 +21,6 @@
     }
 }
 
-
 .advantages__textbox {
     list-style-type: none;
     display: flex;
@@ -32,17 +31,18 @@
 
     &--title {
         font-size: 14px;
-        font-weight: 700;
-        }
-
+        font-weight: bold;
+    }
+    
     &--desc {
-        font-weight: 400;
-        font-size: 14;
+        font-size: 14px;
         line-height: 24px;
         /* or 171% */
         letter-spacing: 0.03em;
-        color: $secondaryColor;
+        color: #757575;
         margin-top: 10px;
     }
 }
+
+
 

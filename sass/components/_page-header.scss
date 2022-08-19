@@ -55,7 +55,7 @@ main {
         }
     }
 
-    &--active-agencja::after {
+    &--active-main::after {
         content: "";
         position: absolute;
         background: $brandColor;

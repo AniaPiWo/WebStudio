@@ -106,7 +106,7 @@ main {
   color: #2196F3;
   fill: #2196F3;
 }
-.menu__nav--active-agencja::after {
+.menu__nav--active-main::after {
   content: "";
   position: absolute;
   background: #2196F3;
@@ -160,7 +160,6 @@ main {
 
 .logo {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
@@ -217,9 +216,6 @@ main {
   border-color: #2196F3;
 }
 .modal__close-btn:hover .modal__close-btn--icon {
-  fill: #2196F3;
-}
-.modal__close-btn .modal__close-btn--icon {
   fill: #2196F3;
 }
 .modal__close-btn--icon-box {
@@ -438,11 +434,10 @@ main {
 }
 .advantages__textbox--title {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: bold;
 }
 .advantages__textbox--desc {
-  font-weight: 400;
-  font-size: 14;
+  font-size: 14px;
   line-height: 24px;
   /* or 171% */
   letter-spacing: 0.03em;
