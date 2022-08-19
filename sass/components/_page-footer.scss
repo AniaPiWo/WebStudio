@@ -12,9 +12,12 @@
     display: inline-flex;
 }
 
+.footer-logo {
+    padding-bottom: 20px;
+}
+
 .footer-address {
     padding: 60px 70px 60px 0;
-    border: 1px solid red;
 
     &__info {
             color: white;
@@ -23,8 +26,6 @@
             vertical-align: top;
             letter-spacing: 0.25px;
             line-height: 1;
-            padding-bottom: 20px;
-            border: 1px solid yellow;
             &--link {
                     color: #ffffff99;
                     font-style: normal;
