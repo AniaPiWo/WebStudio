@@ -5,12 +5,8 @@
     line-height: 2;
 }
 
-.footer__logo {
-    text-decoration: none;
-    cursor: pointer;
-    padding-bottom: 20px;
-}
 
+ 
 .footer {
     margin: 0 auto;
     display: inline-flex;
@@ -18,15 +14,17 @@
 
 .footer-address {
     padding: 60px 70px 60px 0;
+    border: 1px solid red;
 
     &__info {
-            color: $whiteColor;
+            color: white;
             font-style: normal;
             font-size: 14px;
             vertical-align: top;
             letter-spacing: 0.25px;
             line-height: 1;
-
+            padding-bottom: 20px;
+            border: 1px solid yellow;
             &--link {
                     color: #ffffff99;
                     font-style: normal;
@@ -53,7 +51,7 @@
             font-size: 14px;
             line-height: 16px;
             letter-spacing: 0.25px;
-            color: $whiteColor;
+            color: white;
         }
 
     &__iconbox {
@@ -116,7 +114,7 @@
     display: inline-flex;
 
     &__email {
-            background-color: $footerBg;
+            background-color: $footerBgColor;
             border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 4px;
             padding-left: 16px;
@@ -153,7 +151,7 @@
         align-items: center;
         border: none;
         padding: 10px 0px 10px 42px;
-        color: $whiteColor;
+        color: white;
         cursor: pointer;
         background: #2196F3;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
