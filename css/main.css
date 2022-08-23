@@ -906,7 +906,7 @@ main {
   text-decoration: underline;
 }
 
-.menu-mobile--item {
+.mobile-menu .menu-mobile--item {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.8;

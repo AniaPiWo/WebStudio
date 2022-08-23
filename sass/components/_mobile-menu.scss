@@ -51,15 +51,15 @@
     text-decoration: underline;
 }
 
-.menu-mobile--item {
+.mobile-menu .menu-mobile--item {
     font-size: 14px;
-        font-weight: 500;
-        line-height: 1.8;
-        text-decoration: none;
-        color: $primaryColor;
-        display: flex;
-        align-items: center;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    line-height: 1.8;
+    text-decoration: none;
+    color: $primaryColor;
+    display: flex;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-toggle {
