@@ -999,11 +999,6 @@ main {
   }
 }
 @media (max-width: 767px) {
-  .page-header {
-    justify-content: space-between;
-  }
-}
-@media (max-width: 767px) {
   .menu__contact,
 .menu__nav {
     display: none;
