@@ -15,7 +15,7 @@ a {
 }
 
 body {
-  width: 1600px;
+  max-width: 1600px;
   font-family: "Roboto", "Raleway", sans-serif;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
@@ -414,46 +414,88 @@ main {
 
 .advantages__icons {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
   gap: 30px;
-  padding-bottom: 30px;
+  padding: 0 15px;
 }
-.advantages__icons--bg {
+
+.advantages {
+  width: 100%;
+}
+.advantages__icon {
+  display: flex;
+  flex-direction: column;
+}
+.advantages__icon--bg {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
+  margin-bottom: 30px;
 }
-.advantages__icons--icon {
+.advantages__icon--icon {
   width: 70px;
   height: 70px;
 }
-
-.advantages__textbox {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  gap: 30px;
-}
-.advantages__textbox--title {
+.advantages__title {
   font-size: 14px;
   font-weight: bold;
+  text-align: start;
 }
-.advantages__textbox--desc {
+.advantages__desc {
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 10px;
 }
 
+@media only screen and (max-width: 767px) {
+  .advantages__icon {
+    max-width: 450px;
+  }
+  .advantages__icons {
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .advantages__icon {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  .advantages__title {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .advantages__icon {
+    max-width: 354px;
+  }
+  .advantages__icons {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .advantages__icon {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .advantages__title {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .advantages__icon {
+    max-width: 270px;
+  }
+  .advantages__icons {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
 .what-we-do__title {
   font-weight: 700;
   font-size: 36px;
