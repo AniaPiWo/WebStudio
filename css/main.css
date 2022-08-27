@@ -477,22 +477,30 @@ main {
   margin-top: 10px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
   .advantages__icons {
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
   }
-  .advantages__icon {
-    flex-basis: calc((100% - 90px) / 4);
-    max-width: 450px;
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .container {
+    max-width: 768px;
   }
-  .advantages__title {
-    display: flex;
-    justify-content: flex-start;
+  .advantages__icons {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
   .advantages__icons {
     justify-content: center;
     flex-direction: row;
@@ -510,9 +518,6 @@ main {
   .advantages__icons {
     flex-direction: row;
     flex-wrap: nowrap;
-  }
-  .advantages__icon {
-    max-width: 270px;
   }
 }
 .what-we-do__title {
@@ -757,16 +762,20 @@ main {
 }
 
 .footer {
-  margin: 0 auto;
-  display: inline-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .footer-logo {
   padding-bottom: 20px;
+  padding-top: 60px;
 }
 
 .footer__address {
-  padding: 60px 70px 60px 0;
+  padding: 0;
 }
 .footer__address--info {
   color: white;
@@ -805,7 +814,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 .footer-iconbox__item {
   fill: white;
@@ -828,8 +837,10 @@ main {
 
 /* newsletter */
 .footer__newsletter {
-  margin-left: 77px;
-  margin-top: 65px;
+  margin-left: 0;
+  margin-top: 60px;
+  padding-bottom: 60px;
+  flex-direction: column;
 }
 .footer__newsletter--title {
   font-weight: 700;
@@ -841,7 +852,9 @@ main {
 }
 
 .newsletter-form {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .newsletter-form__email {
   background-color: #2f303a;
@@ -852,7 +865,10 @@ main {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  margin-right: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 0;
+  max-width: 450px;
   width: 358px;
   height: 50px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -896,42 +912,6 @@ main {
   margin-right: 27px;
 }
 
-@media only screen and (max-width: 768px) {
-  .footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-  .footer__newsletter {
-    margin-left: 0;
-    margin-top: 60px;
-    padding-bottom: 60px;
-    flex-direction: column;
-  }
-  .footer-logo {
-    padding-bottom: 20px;
-    padding-top: 60px;
-  }
-  .footer__address {
-    padding: 0;
-  }
-  .newsletter-form__email {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 0;
-    max-width: 450px;
-  }
-  .footer-iconbox {
-    padding-top: 20px;
-  }
-  .newsletter-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .footer {
     justify-content: center;
@@ -940,11 +920,12 @@ main {
     text-align: center;
   }
   .footer__address {
-    padding: 60px 140px 60px 0;
+    padding-right: 144px;
   }
   .footer__newsletter {
     margin: 0;
     padding-bottom: 60px;
+    padding-top: 60px;
   }
   .newsletter-form__email {
     margin-top: 20px;
@@ -963,8 +944,31 @@ main {
 }
 @media only screen and (min-width: 1200px) {
   .footer {
+    margin: 0 auto;
+    display: flex;
     flex-direction: row;
+    align-items: baseline;
     flex-wrap: nowrap;
+    text-align: start;
+  }
+  .footer__newsletter {
+    margin-left: 77px;
+    margin-top: 65px;
+  }
+  .footer-logo {
+    padding-bottom: 20px;
+  }
+  .footer__address {
+    padding-right: 70px;
+  }
+  .footer-iconbox {
+    padding-top: 10px;
+  }
+  .newsletter-form__email {
+    margin-right: 12px;
+  }
+  .newsletter-form {
+    display: inline-flex;
   }
 }
 /* Portfolio filters */
