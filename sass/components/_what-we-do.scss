@@ -1,5 +1,6 @@
 .what-we-do {
 
+
     &__title {
         font-weight: 700;
         font-size: 36px;
@@ -42,3 +43,16 @@
     }
 }
 
+
+@media only screen and (max-width: 768px) {
+    .what-we-do {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+.what-we-do {
+        display: none;
+    }
+}

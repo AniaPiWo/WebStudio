@@ -118,4 +118,52 @@ main {
 
 
 
+@media only screen and (max-width: 768px) {
 
+    .advantages__icons {
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .advantages__icon {
+        flex-basis: calc((100% - 90px) / 4);
+        max-width: 450px;
+    }
+
+    .advantages__title {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .advantages__icons {
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .advantages__icon {
+        flex-basis: calc((100% - 30px) / 2);
+        max-width: 354px;
+    }
+
+    .advantages__title {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .advantages__icons {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .advantages__icon {
+        max-width: 270px;
+    }
+}
