@@ -3,7 +3,8 @@
 .portfolio-filter {
     margin: 0px auto 0;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     padding-bottom: 50px;
     gap: 8px;
 
@@ -46,7 +47,7 @@
     flex-wrap: wrap;
     padding-bottom: 94px;
     row-gap: 30px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .project-card {
@@ -124,3 +125,34 @@
     
 }
 
+@media only screen and (max-width: 768px) {
+
+    .portfolio-filter__button {
+        flex-basis: calc((100% - 16px) / 3);
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    .portfolio-filter {
+        display: flex;
+        justify-content: center;
+    }
+
+    .projects {
+        gap: 30px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    .portfolio-filter {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .projects {
+        justify-content: space-between;
+    }
+}
