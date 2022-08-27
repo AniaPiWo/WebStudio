@@ -81,7 +81,6 @@ main {
   align-items: center;
   margin: 0 auto;
   padding: 25px 0;
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -147,6 +146,7 @@ main {
   justify-content: space-between;
   gap: 50px;
   margin-left: 345px;
+  border: 1px solid red;
 }
 .menu__contact-item--link {
   font-size: 14px;
@@ -176,42 +176,19 @@ main {
 }
 
 @media only screen and (max-width: 768px) {
-  .advantages__icons {
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .advantages__icon {
-    flex-basis: calc((100% - 90px) / 4);
-    max-width: 450px;
-  }
-  .advantages__title {
-    display: flex;
-    justify-content: flex-start;
+  .menu {
+    margin-left: 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .advantages__icons {
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .advantages__icon {
-    flex-basis: calc((100% - 30px) / 2);
-    max-width: 354px;
-  }
-  .advantages__title {
+  .menu__contact {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 100px;
+    gap: 0;
   }
-}
-@media only screen and (min-width: 1200px) {
-  .advantages__icons {
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-  .advantages__icon {
-    max-width: 270px;
+  .page-header {
+    padding: 15px 0;
   }
 }
 .logo {
