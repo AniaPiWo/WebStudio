@@ -273,17 +273,17 @@ main {
 }
 .hero-background {
   background: #2f303a;
-  background-image: url("../images/banner-bg.jpg");
+  background-image: url(../images/mobile/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
   box-shadow: inset 50px 50px 50px 50px rgba(47, 48, 58, 0.4), inset 1600px 600px 50px 50px rgba(47, 48, 58, 0.4);
 }
 .hero__title {
-  font-size: 44px;
+  font-size: 26px;
   color: white;
   font-weight: 900;
-  line-height: 1.36;
+  line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -305,6 +305,40 @@ main {
   transform: scale(1.5);
 }
 
+@media screen and (max-width: 768px) {
+  .hero-background {
+    background-image: url(../images/mobile/hero-bg-mobile.jpg);
+  }
+}
+@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 768px) and (min-resolution: 2dppx) {
+  .hero-background {
+    background-image: url(../images/mobile/hero-bg-mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .hero-background {
+    background-image: url(../images/tablet/hero-bg-tablet.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-background {
+    background-image: url(../images/tablet/hero-bg-tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+  .hero-background {
+    background-image: url(../images/hero-bg-1600.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-background {
+    background-image: url(../images/hero-bg-1600@2x.jpg);
+  }
+}
 /* Modal form */
 .modal-form__title {
   font-weight: 700;
@@ -589,11 +623,9 @@ main {
   flex-direction: row;
   justify-content: center;
   gap: 30px;
-  max-width: 760px;
 }
 .our-team__item--img {
   background: white;
-  /* material shadow v1 */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -649,17 +681,29 @@ main {
   fill: white;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .our-team {
     display: flex;
     flex-direction: column;
-    max-width: 270px;
   }
-  .our-team__item {
-    flex-basis: calc((100% - 90px) / 4);
+  .our-team__item--img {
+    width: 450px;
+    margin-top: 30px;
+  }
+  .our-team__title {
+    padding-bottom: 0px;
+  }
+  .our-team__icons {
+    padding-bottom: 24px;
+    justify-content: center;
+    width: 450px;
+  }
+  .team--media {
+    width: 450px;
+    height: 460px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .our-team {
     justify-content: center;
     flex-direction: row;
@@ -667,13 +711,35 @@ main {
   }
   .our-team__item {
     flex-basis: calc((100% - 30px) / 2);
-    max-width: 270px;
+  }
+  .our-team__item--img {
+    width: 354px;
+  }
+  .our-team__title {
+    padding-bottom: 30px;
+    padding-top: 0px;
+  }
+  .our-team__icons {
+    padding-bottom: 24px;
+    justify-content: center;
+    width: 354px;
+  }
+  .team--media {
+    width: 354px;
+    height: 374px;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .our-team__item--img {
+    width: 270px;
+  }
   .our-team {
-    flex-direction: row;
-    flex-wrap: nowrap;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+  .our-team__icons {
+    justify-content: center;
+    width: 270px;
   }
 }
 /* our clients */
@@ -741,7 +807,6 @@ main {
   .our-clients__icons {
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 570px;
   }
   .our-clients__icon {
     flex-basis: calc((100% - 60px) / 2);
