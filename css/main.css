@@ -72,6 +72,11 @@ body {
   overflow: hidden;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  body {
+    overflow-x: hidden;
+  }
+}
 main {
   border-top: 1px solid #ECECEC;
 }
@@ -174,12 +179,12 @@ main {
   fill: #2196F3;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .menu {
     margin-left: 0;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   .menu__contact {
     display: flex;
     flex-direction: column;
@@ -305,22 +310,22 @@ main {
   transform: scale(1.5);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .hero-background {
     background-image: url(../images/mobile/hero-bg-mobile.jpg);
   }
 }
-@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero-background {
     background-image: url(../images/mobile/hero-bg-mobile@2x.jpg);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero-background {
     background-image: url(../images/tablet/hero-bg-tablet.jpg);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .hero-background {
     background-image: url(../images/tablet/hero-bg-tablet@2x.jpg);
   }
@@ -592,12 +597,12 @@ main {
   background: rgba(47, 48, 58, 0.8);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .what-we-do {
     display: none;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   .what-we-do {
     display: none;
   }
@@ -703,7 +708,7 @@ main {
     height: 460px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .our-team {
     justify-content: center;
     flex-direction: row;
@@ -793,7 +798,7 @@ main {
   fill: #2196F3;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .our-clients__icons {
     display: flex;
     justify-content: center;
@@ -803,7 +808,7 @@ main {
     flex-basis: calc((100% - 90px) / 3);
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   .our-clients__icons {
     justify-content: center;
     flex-wrap: wrap;
@@ -905,7 +910,6 @@ main {
   margin-left: 0;
   margin-top: 60px;
   padding-bottom: 60px;
-  flex-direction: column;
 }
 .footer__newsletter--title {
   font-weight: 700;
@@ -977,7 +981,7 @@ main {
   margin-right: 27px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
     justify-content: center;
     flex-direction: row;
@@ -1141,15 +1145,16 @@ main {
   padding: 49px 45px 49px 24px;
 }
 
-@media only screen and (max-width: 768px) {
-  .portfolio-filter__button {
-    flex-basis: calc((100% - 16px) / 3);
+@media only screen and (max-width: 767px) {
+  .portfolio-filter {
+    padding-left: 15px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-filter {
     display: flex;
     justify-content: center;
+    padding-left: 15px;
   }
   .projects {
     gap: 30px;

@@ -49,11 +49,12 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
 
     .hero-background {
         background-image: url(../images/mobile/hero-bg-mobile.jpg);
+       
     }
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -66,7 +67,7 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
 
     .hero-background {
         background-image: url(../images/tablet/hero-bg-tablet.jpg);

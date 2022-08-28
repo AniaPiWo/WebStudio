@@ -96,7 +96,7 @@
     margin-left: 0;
     margin-top: 60px;
     padding-bottom: 60px;
-    flex-direction: column;
+  
 
     &--title {
         font-weight: 700;
@@ -177,12 +177,12 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
 
     .footer {
         justify-content: center;
