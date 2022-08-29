@@ -50,7 +50,15 @@
         fill: $brandColor;
       }
     }
+
+    &:focus {
+      border: 1px solid $brandColor;
+    
+      & .our-clients__icons--svg {
+        fill: $brandColor;
+      }
   }
+}
 }
 
  @media only screen and (max-width: 767px) {
@@ -58,10 +66,11 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 400px;
    }
- 
-  .our-clients__icon {
-    flex-basis: calc((100% - 90px) / 3);
+
+  .our-clients__icons--bg {
+    width: 210px;
   }
  }
 
@@ -69,12 +78,14 @@
   .our-clients__icons {
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 600px;
   }
 
-  .our-clients__icon {
-    flex-basis: calc((100% - 60px) / 2);
+  .our-clients__icons--bg {
+    width: 226px;
   }
-} 
+}
+
 
 @media only screen and (min-width: 1200px) {
   .our-clients__icons {

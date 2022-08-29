@@ -27,13 +27,6 @@ body {
     padding-left: 15px;
 }
 
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-}
 
 .section {
   padding: 94px 0;
@@ -75,5 +68,34 @@ body {
     }
 }
 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  
+  .section {
+      padding: 60px 0;
+  
+      &--top {
+        padding: 60px 0 0 0;
+      }
+  
+      &--bottom {
+        padding: 0 0 60px 0;
+      }
+    }
+  }
+
+@media only screen and (min-width: 786px) and (max-width: 1199px) {
+  
+  .section {
+    padding: 60px 0;
+  
+    &--top {
+      padding: 60px 0 0 0;
+    }
+  
+    &--bottom {
+      padding: 0 0 60px 0;
+    }
+  }
+}
 
 

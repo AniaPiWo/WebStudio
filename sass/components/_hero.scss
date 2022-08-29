@@ -54,6 +54,7 @@
 
     .hero-background {
         background-image: url(../images/mobile/hero-bg-mobile.jpg);
+        max-height: 400px;
        
     }
 
@@ -64,6 +65,10 @@
         .hero-background {
             background-image: url(../images/mobile/hero-bg-mobile@2x.jpg);
         }
+    }
+
+    .hero {
+        padding: 118px 0;
     }
 }
 
