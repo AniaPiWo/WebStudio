@@ -1279,6 +1279,9 @@ main {
 .menu-mobile__nav--item:hover, .menu-mobile__nav--item:focus {
   color: #2196F3;
 }
+.menu-mobile__nav--active {
+  color: #2196F3;
+}
 .menu-mobile__cont {
   padding-top: 302px;
   display: flex;
@@ -1314,12 +1317,8 @@ main {
   padding-top: 64px;
 }
 .menu-mobile__social--item {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-  color: #2196F3;
-  padding: 0 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 .menu-mobile__social--item:last-child {
@@ -1328,7 +1327,14 @@ main {
 .menu-mobile__social--item:first-child {
   padding-left: 0;
 }
-.menu-mobile__social--item:hover, .menu-mobile__social--item:focus {
+.menu-mobile__social--link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+.menu-mobile__social--link:hover, .menu-mobile__social--link:focus {
   color: #2196F3;
 }
 
