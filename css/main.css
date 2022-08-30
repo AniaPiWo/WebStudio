@@ -1243,6 +1243,7 @@ main {
   .project-card__figure img {
     display: block;
     width: 354px;
+    height: 294px;
   }
 }
 @media only screen and (min-width: 1200px) {
