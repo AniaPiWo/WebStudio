@@ -149,6 +149,9 @@ main {
   color: #2196F3;
   fill: #2196F3;
 }
+.menu__nav--active {
+  color: #2196F3;
+}
 .menu__nav--active-main::after {
   content: "";
   position: absolute;
@@ -527,7 +530,7 @@ main {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  gap: 30px;
+  column-gap: 30px;
   padding: 0 15px;
 }
 
@@ -589,11 +592,13 @@ main {
   .container {
     max-width: 1200px;
   }
+  .advantages__icon {
+    padding-bottom: 45px;
+  }
   .advantages__icons {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 60px;
   }
   .advantages__icon {
     flex-basis: calc((100% - 30px) / 2);
@@ -760,17 +765,17 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .our-team__item--img {
+  .our-team__item--img img {
+    display: block;
     width: 354px;
-  }
-  .our-team__title {
-    padding-bottom: 30px;
-    padding-top: 0px;
   }
   .our-team__icons {
     padding-bottom: 24px;
     justify-content: center;
     width: 354px;
+  }
+  .our-team figcaption {
+    padding-top: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -844,7 +849,6 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 400px;
   }
   .our-clients__icons--bg {
     width: 210px;
@@ -858,6 +862,9 @@ main {
   }
   .our-clients__icons--bg {
     width: 226px;
+  }
+  .our-clients__title {
+    margin-bottom: 30px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -1034,7 +1041,9 @@ main {
     margin: 0;
     padding-bottom: 60px;
     padding-top: 60px;
-    max-width: 450px;
+  }
+  input#newsletter-form__email {
+    width: 450px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1052,13 +1061,11 @@ main {
     margin: 0;
     padding-bottom: 60px;
     padding-top: 60px;
-    width: 450px;
   }
   .newsletter-form__email {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 0;
-    max-width: 450px;
   }
   .newsletter-form {
     display: flex;
@@ -1067,6 +1074,10 @@ main {
   }
   .footer-iconbox {
     padding-top: 20px;
+    padding-right: 50px;
+  }
+  input#newsletter-form__email {
+    width: 450px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -1139,7 +1150,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 94px;
-  row-gap: 30px;
+  gap: 30px;
   justify-content: center;
 }
 
@@ -1206,9 +1217,15 @@ main {
 
 @media only screen and (max-width: 767px) {
   .portfolio-filter {
-    display: flex;
-    justify-content: flex-start;
+    margin-left: 30px;
     max-width: 400px;
+    padding: 60px 15px 40px 15px;
+  }
+  .portfolio-filter__button {
+    padding: 6px 25px 6px 25px;
+  }
+  .projects {
+    padding-bottom: 60px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1217,9 +1234,6 @@ main {
     justify-content: center;
     flex-wrap: nowrap;
     padding-left: 15px;
-  }
-  .projects {
-    gap: 30px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -1301,6 +1315,12 @@ main {
   padding: 0 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
+.menu-mobile__social--item:last-child {
+  border-right: none;
+}
+.menu-mobile__social--item:first-child {
+  padding-left: 0;
+}
 .menu-mobile__social--item:hover, .menu-mobile__social--item:focus {
   color: #2196F3;
 }
@@ -1330,7 +1350,7 @@ main {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 48px 40px;
   background-color: white;
   z-index: 999;
   transform: translateX(100%);

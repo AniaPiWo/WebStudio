@@ -46,7 +46,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 94px;
-    row-gap: 30px;
+    gap: 30px;
     justify-content: center;
 }
 
@@ -121,17 +121,23 @@
             padding: 49px 45px 49px 24px;
             }
     }
-
-    
 }
 
 
 @media only screen and (max-width: 767px) {
 
     .portfolio-filter {
-        display: flex;
-        justify-content: flex-start;
+        margin-left: 30px;
         max-width: 400px;
+        padding: 60px 15px 40px 15px;
+    }
+
+    .portfolio-filter__button {
+        padding: 6px 25px 6px 25px;
+    }
+
+    .projects {
+        padding-bottom: 60px;
     }
 }
 
@@ -142,10 +148,6 @@
         justify-content: center;
         flex-wrap: nowrap;
         padding-left: 15px;
-    }
-
-    .projects {
-        gap: 30px;
     }
 }
 

@@ -65,8 +65,10 @@ main {
         }
     }
 
+    &--active {
+        color: $brandColor;
 
-    &--active-main::after {
+    &-main::after {
         content: "";
         position: absolute;
         background: $brandColor;
@@ -76,7 +78,7 @@ main {
         margin-top: 78px;
     }
     
-    &--active-portfolio::after {
+    &-portfolio::after {
         content: "";
         position: absolute;
         background: $brandColor;
@@ -85,6 +87,7 @@ main {
         border-radius: 2px;
         margin-top: 78px;
     }
+ }
 }
 
 

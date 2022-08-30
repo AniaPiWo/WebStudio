@@ -188,7 +188,10 @@
         margin: 0;
         padding-bottom: 60px;
         padding-top: 60px;
-        max-width: 450px;
+    }
+
+    input#newsletter-form__email {
+        width: 450px;
     }
 }
 
@@ -211,15 +214,14 @@
         margin: 0;
         padding-bottom: 60px;
         padding-top: 60px;
-        width: 450px;
     }
 
    .newsletter-form__email {
         margin-top: 20px;
         margin-bottom: 20px;
         margin-right: 0;
-        max-width: 450px;
     }
+
 
     .newsletter-form {
         display: flex;
@@ -229,6 +231,11 @@
 
     .footer-iconbox {
         padding-top: 20px;
+        padding-right: 50px;
+    }
+
+    input#newsletter-form__email {
+        width: 450px;
     }
 
 }
@@ -270,4 +277,4 @@
         flex-direction: row;
     }
 } 
-   
+

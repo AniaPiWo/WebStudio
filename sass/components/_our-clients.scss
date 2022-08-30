@@ -66,7 +66,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 400px;
    }
 
   .our-clients__icons--bg {
@@ -83,6 +82,10 @@
 
   .our-clients__icons--bg {
     width: 226px;
+  }
+
+  .our-clients__title {
+    margin-bottom: 30px;
   }
 }
 

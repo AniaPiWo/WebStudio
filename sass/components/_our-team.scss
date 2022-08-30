@@ -121,19 +121,19 @@
     flex-wrap: wrap;
     }
 
-  .our-team__item--img {
+  .our-team__item--img img {
+    display: block;
     width: 354px;
   } 
-
-  .our-team__title {
-    padding-bottom: 30px;
-    padding-top: 0px;
-  }
 
   .our-team__icons {
     padding-bottom: 24px;
     justify-content: center;
     width: 354px;
+  }
+
+  .our-team figcaption {
+    padding-top: 30px;
   }
 }
 

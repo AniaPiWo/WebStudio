@@ -3,7 +3,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  gap: 30px;
+  column-gap: 30px;
   padding: 0 15px;
 }
 
@@ -75,11 +75,15 @@
       max-width: 1200px;
     }
 
+    .advantages__icon {
+      padding-bottom: 45px;
+    }
+
+
   .advantages__icons {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 60px;
   }
 
   .advantages__icon {
