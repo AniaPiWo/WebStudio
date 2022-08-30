@@ -77,7 +77,6 @@
   .our-clients__icons {
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 600px;
   }
 
   .our-clients__icons--bg {
@@ -85,6 +84,8 @@
   }
 
   .our-clients__title {
+    font-size: 36px;
+    line-height: 1.17;
     margin-bottom: 30px;
   }
 }

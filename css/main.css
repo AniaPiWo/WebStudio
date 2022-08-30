@@ -858,12 +858,13 @@ main {
   .our-clients__icons {
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 600px;
   }
   .our-clients__icons--bg {
     width: 226px;
   }
   .our-clients__title {
+    font-size: 36px;
+    line-height: 1.17;
     margin-bottom: 30px;
   }
 }
@@ -1215,10 +1216,9 @@ main {
   padding: 49px 45px 49px 24px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
   .portfolio-filter {
-    margin-left: 30px;
-    max-width: 400px;
+    margin-left: 20px;
     padding: 60px 15px 40px 15px;
   }
   .portfolio-filter__button {
@@ -1229,11 +1229,18 @@ main {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .projects {
+    justify-content: initial;
+  }
   .portfolio-filter {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
     padding-left: 15px;
+  }
+  .project-card__figure img {
+    display: block;
+    width: 354px;
   }
 }
 @media only screen and (min-width: 1200px) {
