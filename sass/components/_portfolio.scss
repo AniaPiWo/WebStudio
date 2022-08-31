@@ -46,7 +46,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 94px;
-    gap: 30px;
+    gap: 25px;
     justify-content: center;
 }
 
@@ -157,6 +157,10 @@
         width: 354px;
         height: 294px;
     } 
+
+    .projects {
+        padding-left: 15px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -165,8 +169,5 @@
         display: flex;
         justify-content: center;
     }
-    
-    .projects {
-        justify-content: space-between;
-    }
+
 }
